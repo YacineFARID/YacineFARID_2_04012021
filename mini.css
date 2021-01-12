@@ -1,0 +1,77 @@
+
+@font-face {
+  font-family: "Raleway";
+  src: url('fonts/Raleway-VariableFont_wght.ttf');
+  src: url('fonts/Raleway-Italic-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#bloc_page {
+  max-width: 1280px;
+  margin:auto;
+  border-right: 1px black solid;
+
+}
+@media {
+  #bloc_page {
+    width:auto;
+  }
+
+}
+header {
+  display:flex;
+  justify-content:space-between;
+}
+
+a:link {
+  text-decoration: none;
+}
+nav {
+  width: auto;
+  display:flex;
+  
+}
+nav ul {
+  list-style-type: none;
+  display:flex;
+  
+}
+nav li {
+  font-size: 20px;
+  padding-left: 50px;
+ 
+  
+}
+#register {
+  color:#0065FC;
+  order:-2;
+}
+.border_blue {
+  text-align: center;
+  border-bottom: 3px #F2F2F2 solid;
+}
+.border_blue:hover {
+  text-align: center;
+  border-bottom: 3px #0065FC solid;
+  color: #0065FC;
+}
+section {
+  display:flex;
+  flex-wrap:wrap-reverse;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 20px;
+}
+.populaires {
+  background-color: #F2F2F2;
+}
+footer {
+  background-color: #F2F2F2;
+}
+.foot {
+  list-style-type: none;
+}
