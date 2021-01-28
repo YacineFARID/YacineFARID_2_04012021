@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
     <script src="https://kit.fontawesome.com/75565831d5.js" crossorigin="anonymous"></script>
@@ -27,44 +27,42 @@
         <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <div class="research">
-                    <div class="scss"><i class="fas fa-map-marker-alt"></i></div> 
-                    <div><input type="search" value="Marseille,France"/></div> 
-                    <div class="icon1">
-                        <i class="fas fa-search"></i>
+                    <div id="recherche">
+                        <div class="map_marker">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div> 
+                        <div id="search">
+                            <input type="search" id="Barre_Recherche"  value="Marseille, France"/>
+                        </div> 
+                        <div class="Recherche_mobile">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="Recherche_desktop">
+                            <input type="submit" value="Rechercher"/>
+                        </div>
                     </div>
-                    <div class="icon2"><input type="submit" value="Rechercher"/>
-                    </div>
-                </div>
-        </div>
-        <div>
-            <h2 class="">Filtres</h2>
-        <div id="filtres">
-            <div class="filter1">
-                <p>Économique</p>
+        
+            <h2>Filtres</h2>
+            <div id="filtres">
+                <div class="filter1"><i class="fas fa-money-bill-wave"></i><p ></i>Économique</p></div>
+                <div class="filter2"><i class="fas fa-child"></i><p>Familial</p></div>
+                <div class="filter3"><i class="fas fa-heart"></i><p>Romantique</p></div>
+                <div class="filter4"><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
             </div>
-            <div class="filter">
-                <p>Familial</p>
-            </div>
-            <div class="filter">
-                <p>Romantique</p>
-            </div>
-            <div class="filter">
-                <p>Animaux autorisés</p>
-            </div>
-        </div>
 
-        <p>plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="info">
+                <div class="info_icon"><i class="fas fa-info"></i></div>
+                <p>Plus de 500 logements sont disponibles </br > dans cette ville</p>
+            </div>
         </div>
             
         <section id="Marseille">
             <article>
                 <h1>Hébergements à marseille</h1>
-                <div id="om">   
-                    <div class="Mars">
-                        <img src="images/4_small/cannebière.jpg" class="Marse" alt=" Auberge de la Cannebière"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/cannebière.jpg" class="Card_Marseille_img" alt=" Auberge de la Cannebière"/>
                         <div>
-                            <p class="marsh2">Auberge la cannebière</p>
+                            <p class="Card_Marseille_title">Auberge la cannebière</p>
                             <p class="marsp">Nuit à partir de 25€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -75,10 +73,10 @@
                            </div>
                         </div>
                     </div>
-                    <div class="Mars">
-                        <img src="images/4_small/Port.jpg" class="Marse" alt="Hôtel du Port"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/Port.jpg" class="Card_Marseille_img" alt="Hôtel du Port"/>
                         <div>
-                            <p class="marsh2">Hôtel du port</p>
+                            <p class="Card_Marseille_title">Hôtel du port</p>
                             <p class="marsp">Nuit à partir de 52€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -89,10 +87,10 @@
                            </div>
                        </div>
                     </div>
-                    <div class="Mars">
-                        <img src="images/4_small/Les mouettes.jpg"  class="Marse" alt="hôtel les mouettes"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/Les mouettes.jpg"  class="Card_Marseille_img" alt="hôtel les mouettes"/>
                         <div>
-                            <p class="marsh2">Hôtel les mouettes</p>
+                            <p class="Card_Marseille_title">Hôtel les mouettes</p>
                             <p class="marsp">Nuit à partir de 76€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -103,10 +101,10 @@
                            </div>    
                         </div>
                     </div>
-                    <div class="Mars">
-                        <img src="images/4_small/la mer.jpg" class="Marse" alt="hôtel de la mer"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/la mer.jpg" class="Card_Marseille_img" alt="hôtel de la mer"/>
                         <div>
-                            <p class="marsh2">Hôtel de la mer</p>
+                            <p class="Card_Marseille_title">Hôtel de la mer</p>
                             <p class="marsp">Nuit à partir de 46€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -117,10 +115,10 @@
                            </div>
                         </div>
                     </div>
-                    <div class="Mars">
-                        <img src="images/4_small/le panier.jpg" class="Marse" alt="Aubgerge le panier"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/le panier.jpg" class="Card_Marseille_img" alt="Aubgerge le panier"/>
                         <div>
-                            <p class="marsh2">Auberge le panier</p>
+                            <p class="Card_Marseille_title">Auberge le panier</p>
                             <p class="marsp">Nuit à partir de 23€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -131,10 +129,10 @@
                            </div>
                         </div>
                     </div>
-                    <div class="Mars">
-                        <img src="images/4_small/chez amina.jpg" class="Marse" alt="hôtel chez amina"/>
+                    <div class="Card_Marseille">
+                        <img src="images/4_small/chez amina.jpg" class="Card_Marseille_img" alt="hôtel chez amina"/>
                         <div>
-                            <p class="marsh2">Hôtel chez Amina</p>
+                            <p class="Card_Marseille_title">Hôtel chez Amina</p>
                             <p class="marsp">Nuit à partir de 96€</p>
                             <div class="star1">
                                 <div class="fastar"><i class="fas fa-star"></i></div>
@@ -145,7 +143,6 @@
                            </div>
                         </div>
                     </div>
-                </div> 
                 <p id="marsend">Afficher plus</p>   
             </article>
 
