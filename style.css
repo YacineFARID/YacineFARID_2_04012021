@@ -1,28 +1,15 @@
 body {
   width: 100%;
   height: 100%;
+  padding:0;
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   font-family: "Raleway", sans-serif;
 }
-
 h1 {
   font-size: 1.5em;
-  margin-left: 5.33%;
-}
-h2 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-left: 5.33%;
-}
-p {
-  font-size: 1em;
-  margin-left: 5.33%;
-}
-li {
-  font-size: 13px;
+  margin:0;
 }
 a:link {
   text-decoration: none;
@@ -37,27 +24,25 @@ header {
 }
 #header_top {
   display: flex;
-  flex: 1;
+  justify-content: space-between;
+  flex:1;
   width: 100%;
   height: 50%;
 }
 .logo {
   display: flex;
-  flex: 1;
   height: 40px;
   margin-top: 5%;
-  margin-right: 25%;
-  padding: 0;
+  margin-right: 35%;
+  padding-left:20px;
 }
 .register_mobile {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex: 1;
   font-size: 1em;
   font-weight: bold;
-  padding-top: 3%;
-  padding-right: 5%;
+  padding: 20px 20px 2px 0;
   margin: 0;
   color: #0065fc;
 }
@@ -67,15 +52,13 @@ header {
 header nav {
   width: 100%;
   height: 50%;
-  display: flex;
-  flex: 1;
 }
 nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex:1;
   height: 100%;
-  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -83,8 +66,7 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  font-size: 1em;
-  flex: 1;
+  font-size: 0.9em;
   width: 50%;
   height: 50%;
   padding-bottom: 3%;
@@ -96,10 +78,22 @@ nav li:hover {
 nav li a:hover {
   color: #0065fc;
 }
-#recherche {
-  width: 89%;
+
+#filtres {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding:20px;
+}
+#filtres h2 {
+  font-size:1em;
+  font-weight: bold;
+}
+#Barre_Recherche {
+  width: 100%;
   height: 51px;
-  margin-left: 5.33%;
+  margin-top:5%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   border: 1px #f2f2f2 solid;
@@ -125,7 +119,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
 }
-#Barre_Recherche {
+#Recherche {
   width: 80%;
   height: 1.2em;
   font-size: 1em;
@@ -146,260 +140,116 @@ nav li a:hover {
   display: flex;
   align-items: center;
 }
-.fasfa-search {
-  color: white;
-}
 .Recherche_desktop {
   display: none;
 }
-#filtres {
+#filtres ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
+  padding:0;
+  margin:0;
 }
-.filter1 {
-  border: 2px #e7e6e6 solid;
-  border-radius: 25px 25px;
-  width: 45%;
-  height: 48px;
-  margin-left: 5.33%;
-  margin-bottom: 4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.filter1 i {
+#filtres ul i {
+  min-width: 50px;
   width: 50px;
-  height: 52px;
-  border-radius: 25px 25px 25px 25px;
-  position: absolute;
-  left: 5%;
+  height: 50px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #deebff;
   color: #0065fc;
 }
-.filter1 p {
-  font-size: 1em;
-  font-weight: bold;
-  display: flex;
-  padding-right: 10%;
+#filtres ul p {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin:0;
+    padding: 5%;
 }
-.filter2 {
-  border: 2px #e7e6e6 solid;
-  border-radius: 25px 25px;
-  width: 34%;
-  height: 48px;
-  margin-left: 5.33%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.filter2 i {
-  width: 50px;
-  height: 52px;
-  border-radius: 25px 25px 25px 25px;
-  position: absolute;
-  left: 56%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #deebff;
-  color: #0065fc;
-}
-.filter2 p {
-  font-size: 1em;
-  font-weight: bold;
-  display: flex;
-  padding-right: 10%;
-}
-.filter3 {
-  border: 2px #e7e6e6 solid;
-  border-radius: 25px 25px;
-  width: 43%;
-  height: 48px;
-  margin-left: 5.33%;
-  margin-bottom: 4%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.filter3 i {
-  width: 50px;
-  height: 52px;
-  border-radius: 25px 25px 25px 25px;
-  position: absolute;
-  left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #deebff;
-  color: #0065fc;
-}
-.filter3 p {
-  font-size: 1em;
-  font-weight: bold;
-  display: flex;
-  padding-right: 8%;
-}
-.filter4 {
-  border: 2px #e7e6e6 solid;
-  border-radius: 25px 25px;
-  width: 58%;
-  height: 48px;
-  margin-left: 5.33%;
+#filtres ul li {
+  border-top: 2px #e7e6e6 solid;
+  border-right: 2px #e7e6e6 solid;
+  border-bottom: 2px #e7e6e6 solid;
+  border-left:none;
+  border-radius: 25px;
+  height: 46px;
+  margin-left:3%;
   margin-bottom: 3%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
 }
-.filter4 i {
-  width: 50px;
-  height: 52px;
-  border-radius: 25px 25px 25px 25px;
-  position: absolute;
-  left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #deebff;
-  color: #0065fc;
+.filter1 {
+  width: 52%;
 }
-.filter4 p {
-  font-size: 1em;
-  font-weight: bold;
-  display: flex;
-  padding-right: 10%;
+.filter2 {
+  width: 40%;
 }
-#Marseille {
-  display: flex;
-  flex-direction: column-reverse;
+.filter3 {
+  width: 50%;
+}
+.filter4 {
+  width: 60%;
 }
 #info {
   display: flex;
   flex-direction: row;
-  margin-left:4%;
+  justify-content: space-around;
+  margin-top: 5%;
 }
 .info_icon {
-  width: 1em;
-  height: 1em;
+  width: 1.2em;
+  height: 1.2em;
   border: 1px #e7e6e6 solid;
-  border-radius: 25px 25px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 15px;
-  left: 10px;
-
 }
 #info i {
-  font-size: 0.5em;
-  display: flex;
+  font-size: 0.7em;
   color: #0065fc;
 }
 #info p {
-
+  margin:0;
 }
-Section article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+section {
+    display: flex;
+    flex-direction: column;
 }
-section article h1 {
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-  margin-left: 4.33%;
-}
-.Card_Marseille {
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  width: 89.33%;
-  height: 199px;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 11px;
-  padding-left: 5px;
-  margin-top: 6px;
-  margin-right: 5.33%;
-  margin-bottom: 6px;
-  margin-left: 5.33%;
-  box-shadow: 1px 1px 8px rgb(209, 208, 208);
-}
-.Card_Marseille_img {
-  width: 100%;
-  height: 114px;
-  border-radius: 15px 15px 0px 0px;
-  display: flex;
-  align-content: center;
-  object-fit: cover;
-}
-.Card_Marseille_title {
-  font-size: 1.06em;
-  font-weight: bold;
-  margin-top: 3%;
-  margin-left: 4%;
-  margin-bottom: 0;
-}
-.marsp {
-  font-size: 0.9em;
-  margin-top: 1%;
-  margin-left: 4%;
-  margin-bottom: 0;
-}
-.star1 {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.2em;
-  margin-top: 3%;
-  margin-left: 4%;
-}
-#marsend {
-  font-size: 17px;
-  font-weight: bolder;
-}
-#populaires {
-  width: 100%;
+aside {
   height: 581px;
+  padding:20px;
+  margin:0;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
 }
-#populaire {
+#Aside_title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5%;
+}
+#Aside_title h2 {
+  font-size: 1.4em;
+  font-weight: bold;
 }
 .chart {
-  margin-right: 5.33%;
   font-size: 1.5em;
 }
-.populaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.populair {
+.Card_populaires {
   background-color: white;
   display: flex;
   border-radius: 20px;
-  width: 89.33%;
+  width: 100%;
   height: 134px;
-  padding: 5px;
+  padding: 5px 0 5px 5px;
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
   margin-bottom: 15px;
 }
-.popul {
+.Card_populaires_img {
   width: 38.02%;
   height: 134px;
   border-radius: 15px 0px 0px 15px;
@@ -407,28 +257,26 @@ section article h1 {
   align-content: center;
   object-fit: cover;
 }
-.popu {
-  width: 51.31%;
+.Card_populaires_description {
+  width: 50%;
   height: 134px;
+  padding:5%;
   display: flex;
   flex-direction: column;
 }
-.poph2 {
-  font-size: 1.1em;
+.Card_populaires h3 {
+  font-size: 1em;
   font-weight: bold;
-  margin-top: 0.83em;
-  margin-bottom: 0px;
-  margin-left: 9.15%;
+  margin:0;
 }
-.popp {
-  margin-top: 5%;
-  margin-left: 9.15%;
+.Card_populaires p {
+  font-size: 0.9em;
+  margin:0;
 }
 .star2 {
   display: flex;
   flex-direction: row;
-  margin-left: 9.15%;
-  margin-top: 7%;
+  padding-top:40px;
 }
 .fastar {
   color: #0065fc;
@@ -438,24 +286,73 @@ section article h1 {
   color: #f2f2f2;
   font-size: 0.8em;
 }
-
+article {
+ padding:20px;
+}
+section article h2 {
+  font-size:1.4em;
+  font-weight: bold;
+}
+.Card_Marseille {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  height: 199px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 8px rgb(209, 208, 208);
+}
+.Card_marseille_description {
+  width: 90%;
+  height: 80px;
+  padding:10px;
+}
+.Card_Marseille img {
+  width: 100%;
+  height: 114px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.Card_Marseille h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-top: 1%;
+  margin:0;
+}
+.Card_Marseille p {
+  font-size: 0.9em;
+  padding-top:1%;
+  margin:0;
+}
+.star1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  padding-top:2%;
+}
+article p {
+  font-size: 1em;
+  font-weight: bolder;
+}
 #activity {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.activ {
+.Card_activités {
   display: flex;
   flex-direction: column;
-  width: 89.33%;
+  width: 100%;
   height: 190px;
   border-radius: 20px;
   margin-top: 0px;
   margin-bottom: 24px;
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
-.acti {
+.Card_activités img {
   width: 100%;
   height: 134px;
   border-radius: 20px 20px 0px 0px;
@@ -463,10 +360,353 @@ section article h1 {
   flex: 1;
   object-fit: cover;
 }
-.pactivité {
+.Card_activités p {
   font-size: 1em;
   font-weight: bold;
+  padding-left: 20px;
 }
 footer {
+  padding:20px;
   background-color: #f2f2f2;
+}
+footer h2 {
+ font-size: 1.4em;
+ font-weight: bold;
+ margin:2%;
+ padding-top:5%;
+
+}
+footer p {
+font-size:em;
+margin:2%;
+}
+
+@media only screen and (min-width: 992px)
+{
+  h1 {
+    font-size: 1.29em;
+    font-weight: bold;
+  }
+  p { 
+    font-size: 0.94em;
+  }
+  header {
+    width: 100%;
+    height: 124px;
+    display: flex;
+    flex-direction:row;
+  }
+  #header_top {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 50%;
+  }
+  .logo {
+    width: 50%;
+    height: 45px;
+    padding-top: 5%;
+    padding-right: 66%;
+    margin: 0;
+  }
+  .register_mobile {
+    display: none;
+  }
+  #register_desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.95em;
+    font-weight: bold;
+    padding-top: 5%;
+    margin: 0;
+    color: #0065fc;
+  }
+  header nav {
+    width: 100%;
+    height: 75%;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  nav li {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 50%;
+    padding-top: 5%;
+    font-size: 0.95em;
+    border-top: 3px #f2f2f2 solid;
+    border-bottom: none;
+  }
+  nav li:hover {
+    border-top: 3px #0065fc solid;
+    border-bottom: none;
+  }
+  nav li a:hover {
+    color: #0065fc;
+  }
+  #recherche {
+    width: 27%;
+    height: 50px;
+    margin-left: 5.34%;
+    display: flex;
+    flex-direction: row;
+    border: 1px #f2f2f2 solid;
+    border-radius: 15px;
+  }
+  .map_marker {
+    width: 13%;
+    height: 51px;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+  }
+  .map_marker i {
+    font-size: 18px;
+    color: whiter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #search {
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+  }
+  #Barre_Recherche {
+    width: 80%;
+    height: 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+  }
+  .Recherche_mobile {
+    display: none;
+  }
+  .Recherche_desktop {
+    width: 24%;
+    height: 51px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #0065fc;
+  }
+  .Recherche_desktop input {
+    font-size: 18px;
+    border-radius: 15px;
+    border:none;
+    background-color: #0065fc;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  #filtres {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter1 {
+    border: 2px #e7e6e6 solid;
+    border-radius: 25px 25px;
+    width: 12%;
+    height: 48px;
+    margin-left: 5.33%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .filter1 i {
+    width: 50px;
+    height: 52px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deebff;
+    color: #0065fc;
+  }
+  .filter1 p {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    padding-right: 10%;
+  }
+  .filter2 {
+    border: 2px #e7e6e6 solid;
+    border-radius: 25px 25px;
+    width: 9%;
+    height: 48px;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .filter2 i {
+    width: 50px;
+    height: 52px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deebff;
+    color: #0065fc;
+  }
+  .filter2 p {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    padding-right: 10%;
+  }
+  .filter3 {
+    border: 2px #e7e6e6 solid;
+    border-radius: 25px 25px;
+    width: 43%;
+    height: 48px;
+    margin-left: 5.33%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .filter3 i {
+    width: 50px;
+    height: 52px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deebff;
+    color: #0065fc;
+  }
+  .filter3 p {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    padding-right: 8%;
+  }
+  .filter4 {
+    border: 2px #e7e6e6 solid;
+    border-radius: 25px 25px;
+    width: 58%;
+    height: 48px;
+    margin-left: 5.33%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .filter4 i {
+    width: 50px;
+    height: 52px;
+    border-radius: 25px 25px 25px 25px;
+    position: absolute;
+    left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deebff;
+    color: #0065fc;
+  }
+  .filter4 p {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    padding-right: 10%;
+  }
+  #Marseille {
+    width: 100%;
+    height: 627px;
+    display: flex;
+    flex-direction: row;
+  }
+  #Marseille article {
+    width: 60.90%;
+    height: 627px;
+    margin-left:3.40%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  #Marseille article .Card_Marseille {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #Marseille aside {
+   width: 29.30%;
+   height: 627px;
+   margin-left: 2.92%;
+   background-color: #f2f2f2;
+   border-radius:15px;
+   display:flex;
+   flex-direction:column;
+  }
+  section article h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  .Card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:2.78%;
+    margin-right: 2.78%;
+  }
+  .Card_Marseille {
+    border-radius: 20px;
+    width: 19%;
+    height: 199px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 11px;
+    padding-left: 5px;
+    margin-left: 0;
+    margin-right: 2.08%;ox-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_Marseille_img {
+    width: 100%;
+    height: 114px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-content: center;
+    object-fit: cover;
+  }
+  .Card_Marseille_title {
+    font-size: 1.06em;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 0;
+  }
+  .marsp {
+    font-size: 0.9em;
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-bottom: 0;
+  }
+  .star1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    margin-top: 3%;
+    margin-left: 4%;
+  }
+  #marsend {
+    font-size: 17px;
+    font-weight: bolder;
+  }
 }
