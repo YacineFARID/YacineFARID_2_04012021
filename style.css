@@ -289,16 +289,18 @@ aside {
 section article {
   padding: 20px;
 }
-section article h2 {
+#Marseille {
+  display: flex;
+  flex-direction: column;
+}
+#Marseille h2 {
   font-size: 1.4em;
   font-weight: bold;
   margin:0;
 }
 .Card_Marseille {
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
-  width: 100%;
+  width: 96%;
   height: 199px;
   padding-top: 5px;
   padding-right: 5px;
@@ -308,9 +310,13 @@ section article h2 {
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
 .Card_marseille_description {
-  width: 90%;
-  height: 80px;
-  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:0;
+  width: 98.3%;
+  height: 30%;
+  padding: 5px;
 }
 .Card_Marseille img {
   width: 100%;
@@ -321,24 +327,25 @@ section article h2 {
 .Card_Marseille h3 {
   font-size: 1.1em;
   font-weight: bold;
-  padding-top: 1%;
   margin: 0;
 }
 .Card_Marseille p {
   font-size: 0.9em;
-  padding-top: 1%;
   margin: 0;
 }
 .star1 {
   display: flex;
   flex-direction: row;
   font-size: 1em;
-  padding-top: 2%;
 }
-article p {
+#Marseille_end {
+  padding-top: 20px;
   font-size: 1em;
-  font-weight: bolder;
+  font-weight: bold;
   margin:0;
+}
+#Activités {
+  padding:20px;
 }
 #activity {
   display: flex;
@@ -359,7 +366,6 @@ article p {
   height: 134px;
   border-radius: 20px 20px 0px 0px;
   display: flex;
-  flex: 1;
   object-fit: cover;
 }
 .Card_activités p {
@@ -381,7 +387,7 @@ footer p {
   font-size: em;
   margin: 2%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1224px) {
 
   header {
     width: auto;
@@ -426,6 +432,7 @@ footer p {
     display: flex;
     font-weight: bold;
     color: #0065fc;
+    border:none;
   }
   #Recherches {
     padding: 50px;
@@ -492,10 +499,10 @@ footer p {
   aside {
     width: 29.17%;
     height: 625px;
-    padding: 44px 37px 0 37px;
+    padding: 44px 37px 27px 37px;
     border-radius: 15px;
   }
-  aside :nth-child(4) {
+  aside :nth-child(3) {
     margin-bottom: 0;
   }
   #Aside_title {
@@ -509,33 +516,63 @@ footer p {
     margin-bottom:33px;
   }
   section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 61.11%;
     height: 625px;
     background-color: #f2f2f2;
     border-radius: 15px;
-    padding: 44px;
+    padding: 44px 40px 27px 40px;
     margin-right:40px;
-    display:flex;
-    flex-direction: column;
   }
-  .Card_Marseille {
+  #Marseille h2 {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  #Marseille {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
+    align-items: flex-start;
+    margin-right:0;
+  }
+  #Marseille :nth-child(4) {
+    margin-right:0;
+  }
+  #Marseille :nth-child(4) {
+    margin-bottom: 0;
+  }
+  #Marseille :nth-child(5) {
+    margin-bottom:0;
+  }
+  #Marseille :nth-child(7) {
+   margin-bottom:0;
+   margin-right:0;
+  }
+  .Card_Marseille {
+    background-color: white;
     border-radius: 20px;
     width: 27.95%;
     height: 199px;
     padding-top: 5px;
     padding-right: 5px;
     padding-left: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top:0;
+    margin-right:30px;
+    margin-bottom: 27px;
     box-shadow: 1px 1px 8px rgb(209, 208, 208);
   }
   .Card_marseille_description {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 90%;
-    height: 80px;
-    padding: 10px;
+    height: 30%;
+    padding: 5px;
   }
   .Card_Marseille img {
     width: 100%;
@@ -544,20 +581,21 @@ footer p {
     object-fit: cover;
   }
   .Card_Marseille h3 {
-    font-size: 1.1em;
+    font-size: 14px;
     font-weight: bold;
-    padding-top: 1%;
     margin: 0;
   }
   .Card_Marseille p {
-    font-size: 0.9em;
-    padding-top: 1%;
+    font-size: 12px;
     margin: 0;
   }
   .star1 {
     display: flex;
     flex-direction: row;
     font-size: 1em;
-    padding-top: 2%;
   }
+  #Marseille_end {
+    padding-top: 44px;
+  }
+
 }
