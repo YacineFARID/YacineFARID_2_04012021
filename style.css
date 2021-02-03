@@ -346,8 +346,6 @@ section article {
 }
 #Activités {
   padding:20px;
-}
-#activity {
   display: flex;
   flex-direction: column;
 }
@@ -368,7 +366,7 @@ section article {
   display: flex;
   object-fit: cover;
 }
-.Card_activités p {
+#Activités p {
   font-size: 1em;
   font-weight: bold;
   padding-left: 20px;
@@ -597,5 +595,136 @@ footer p {
   #Marseille_end {
     padding-top: 44px;
   }
-
+  #Activités h2 {
+    width: 50%;
+    margin:0;
+  }
+  #Card_Mobile {
+    display:none;
+  }
+  #Activités {
+    width: 100%;
+    padding: 0 50px 0 50px;
+  }
+  #activity {
+    display:flex;
+    flex-direction: row;
+  }
+  .Card_activités1 {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    height:446px;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-right:43px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités1 img {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  .activity {
+    width: 21%;
+    height: 489px;
+    margin-right: 43px;
+    display:flex;
+    flex-direction: column;
+    }
+  .Card_activités2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:236px;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 43px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités2 img {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  .Card_activités3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:166px;
+    border-radius: 20px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités3 img {
+    width: 100%;
+    height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  .Card_activités4 {
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    height:446px;
+    border-radius: 20px;
+    margin-right:43px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités4 img {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  .activity2 {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+  }
+  .Card_activités5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:196px;
+    border-radius: 20px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités5 img {
+    width: 100%;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  .Card_activités6 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:209px;
+    border-radius: 20px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+  }
+  .Card_activités6 img {
+    width: 100%;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    object-fit: cover;
+  }
+  #Activités p {
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 20px;
+  }
 }
