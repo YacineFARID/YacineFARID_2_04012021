@@ -22,6 +22,9 @@ header {
   flex-wrap: wrap;
   flex: 1;
 }
+header img {
+  display:none;
+}
 #header_top {
   display: flex;
   justify-content: space-between;
@@ -57,7 +60,6 @@ nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  flex:1;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -378,4 +380,71 @@ footer h2 {
 footer p {
 font-size:em;
 margin:2%;
+}
+@media only screen and (min-width: 992px)
+{
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    font-family: "Raleway", sans-serif;
+  }
+  header {
+    width: auto;
+    margin:0;
+    padding:0 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header img {
+    display:flex;
+    justify-content: flex-start;
+    width: 10%;
+    height: 40px;
+    padding-top:50px;
+  }
+  #header_top {
+    display:none;
+  }
+  header nav {
+    width: 40%;
+    height: 100px;
+  }
+  nav ul {
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.9em;
+    width: 35%;
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom:0;
+    border-bottom: none;
+  }
+  nav li:hover {
+    border-top: 3px #0065fc solid;
+    border-bottom: none;
+  }
+  nav li a:hover {
+    color: #0065fc;
+  }
+  .register_mobile {
+    display: none;
+  }
+  #register_desktop {
+    display: flex;
+    font-weight: bold;
+    color: #0065fc;
+  }
 }
