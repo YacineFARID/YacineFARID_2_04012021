@@ -727,4 +727,28 @@ footer p {
     font-weight: bold;
     padding-left: 20px;
   }
+  footer {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    Margin:0;
+    background-color: #f2f2f2;
+  }
+  .element {
+  display:flex;
+  flex-direction: column;
+  flex:1;
+  }
+  footer h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  footer p {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+  }
+
 }
