@@ -346,8 +346,13 @@ section article {
 }
 #Activités {
   padding:20px;
-  display: flex;
+}
+#Card_Mobile {
+  display:flex;
   flex-direction: column;
+}
+#Card_desktop {
+  display:none;
 }
 .Card_activités {
   display: flex;
@@ -603,17 +608,18 @@ footer p {
     display:none;
   }
   #Activités {
-    width: 100%;
+    width: 91.7%;
     padding: 0 50px 0 50px;
   }
-  #activity {
+  #Card_desktop {
+    width: 100%;
     display:flex;
     flex-direction: row;
   }
   .Card_activités1 {
     display: flex;
     flex-direction: column;
-    width: 21%;
+    width: 22.61%;
     height:446px;
     border-radius: 20px;
     margin-top: 0px;
@@ -629,7 +635,7 @@ footer p {
     object-fit: cover;
   }
   .activity {
-    width: 21%;
+    width: 22.61%;
     height: 489px;
     margin-right: 43px;
     display:flex;
@@ -671,7 +677,7 @@ footer p {
   .Card_activités4 {
     display: flex;
     flex-direction: column;
-    width: 21%;
+    width: 22.61%;
     height:446px;
     border-radius: 20px;
     margin-right:43px;
@@ -685,7 +691,7 @@ footer p {
     object-fit: cover;
   }
   .activity2 {
-    width: 21%;
+    width: 22.61%;
     display: flex;
     flex-direction: column;
   }
