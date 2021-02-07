@@ -87,10 +87,6 @@ h1 {
 #recherches p {
   font-size: 1em;
 }
-#recherches h2 {
-  font-size: 1em;
-  font-weight: bold;
-}
 #barre_recherche {
   width: 100%;
   height: 51px;
@@ -144,6 +140,10 @@ h1 {
 }
 .recherche_desktop {
   display: none;
+}
+#filtres h2 {
+  font-size: 1em;
+  font-weight: bold;
 }
 #filtres ul {
   display: flex;
@@ -298,7 +298,33 @@ section article {
   font-weight: bold;
   margin: 0;
 }
-.Card_Marseille {
+.card_marseille_element {
+  border-radius: 20px;
+  width: 96%;
+  height: 199px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 8px rgb(209, 208, 208);
+}
+.card_marseille_element img {
+  width: 100%;
+  height: 114px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+section article h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+}
+section article p {
+  font-size: 0.9em;
+  margin: 0;
+}
+.card_marseille {
   border-radius: 20px;
   width: 96%;
   height: 199px;
@@ -339,6 +365,7 @@ section article {
   font-size: 1em;
 }
 #marseille_end {
+  width: 100%;
   padding-top: 20px;
   font-size: 1em;
   font-weight: bold;
@@ -442,10 +469,7 @@ footer p {
   }
   #filtres p {
     font-size: 17px;
-  }
-  #filtres h2 {
-    font-size: 1em;
-    font-weight: bold;
+    margin: 0;
   }
   #barre_recherche {
     width: 420px;
@@ -479,6 +503,10 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  #filtres h2 {
+    font-size: 1em;
+    font-weight: bold;
+  }
   #filtres ul {
     width: 90%;
   }
@@ -503,8 +531,8 @@ footer p {
     border-radius: 15px;
   }
   #aside_title {
-    margin:0;
-    padding-top:44px;
+    margin: 0;
+    padding-top: 44px;
     padding-bottom: 25px;
   }
   #aside_title h2 {
@@ -515,59 +543,72 @@ footer p {
   }
   .card_populaires {
     height: 144px;
-    margin:0;
+    margin: 0;
     margin-bottom: 0;
   }
   section article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 61.11%;
     height: 625px;
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 0 40px 34px 40px;
-    margin-right:40px;
+    margin-right: 40px;
   }
-  #marseille h2 {
+  section article h2 {
     width: 80%;
-    padding-top:44px;
+    padding-top: 44px;
     padding-bottom: 25px;
+    margin:0;
     font-size: 1.4em;
     font-weight: bold;
   }
-  #marseille {
-    display: flex;
+  .block_card_marseille {
+    width: 100%;
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-right: 0;
+    justify-content: flex-start;
   }
-  #marseille :nth-child(0n+4) {
-    margin-right: 0;
+  .block_card_marseille_element {
+    width: 30.87%;
+    height:199px;
+    padding-right: 3.87%;
+    padding-bottom: 30px;
   }
-  #marseille :nth-child(0n+4) {
-    margin-bottom: 0;
+  .card_marseille_element {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width:100%;
+    height:100%;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin:0;
+    box-shadow: 1px 1px 8px rgb(209, 208, 208);
   }
-  #marseille :nth-child(0n+5) {
-    margin-bottom: 0;
+  .card_marseille_element img {
+    width: 100%;
+    height: 114px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
   }
-  #marseille :nth-child(0n+7) {
-    margin-bottom: 0;
-    margin-right: 0;
+  .card_marseille_element h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .card_marseille_element p {
+    font-size: 12px;
+    margin: 0;
   }
   .card_marseille {
     background-color: white;
     border-radius: 20px;
-    width: 27.95%;
-    height: 199px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    box-shadow: 1px 1px 8px rgb(209, 208, 208);
+    width: 30.87%;
+    margin:0;
   }
   .card_marseille_description {
     display: flex;
@@ -609,7 +650,7 @@ footer p {
     display: none;
   }
   #activity {
-    margin:0;
+    margin: 0;
     padding: 0 50px 0 50px;
   }
   #card_desktop {
@@ -620,10 +661,10 @@ footer p {
     flex-direction: row;
   }
   .card_desktop_bloc {
-    width:50%;
-    height:auto;
-    margin:0;
-    display:flex;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    display: flex;
   }
   .card_activity1 {
     display: flex;
@@ -631,7 +672,7 @@ footer p {
     width: 50%;
     height: 100%;
     border-radius: 20px;
-    margin:0;
+    margin: 0;
     box-shadow: 1px 1px 8px rgb(209, 208, 208);
   }
   .card_activity1 img {
@@ -644,8 +685,8 @@ footer p {
   .card_flex_column_1 {
     width: 50%;
     height: 100%;
-    padding-left:43px;
-    padding-right:43px;
+    padding-left: 43px;
+    padding-right: 43px;
     display: flex;
     flex-direction: column;
   }
@@ -688,7 +729,7 @@ footer p {
     width: 50%;
     height: 446px;
     border-radius: 20px;
-    margin:0;
+    margin: 0;
     box-shadow: 1px 1px 8px rgb(209, 208, 208);
   }
   .card_activity4 img {
@@ -700,7 +741,7 @@ footer p {
   }
   .card_flex_column_2 {
     width: 50%;
-    padding-left:43px;
+    padding-left: 43px;
     display: flex;
     flex-direction: column;
   }
