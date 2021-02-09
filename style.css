@@ -29,8 +29,7 @@ header img {
 #header_top img {
   display: flex;
   height: 40px;
-  margin-top: 5%;
-  margin-right: 35%;
+  padding-top:20px;
   padding-left: 20px;
 }
 .register_mobile {
@@ -322,7 +321,6 @@ section article img {
 }
 .card_marseille_1 {
   border-radius: 20px;
-  width: 96%;
   height: 199px;
   padding-top: 5px;
   padding-right: 5px;
@@ -333,7 +331,6 @@ section article img {
 }
 .card_marseille_2 {
   border-radius: 20px;
-  width: 96%;
   height: 199px;
   padding-top: 5px;
   padding-right: 5px;
@@ -440,10 +437,6 @@ footer p {
     border-bottom: none;
   }
   nav li:hover {
-    border-top: 3px #0065fc solid;
-    border-bottom: none;
-  }
-  .border_blue:enabled {
     border-top: 3px #0065fc solid;
     border-bottom: none;
   }
@@ -722,7 +715,7 @@ footer p {
     margin: 0;
   }
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   #research p {
     padding-bottom: 20px;
   }
@@ -770,4 +763,48 @@ footer p {
   #info p {
     padding: 4px 0 0 10px;
   }
+  aside {
+    height: 400px;
+  }
+  #aside_title {
+    padding: 20px 0;
+  }
+  #popular_flex_tablet {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  #popular_flex_tablet :nth-child(0n+2){
+   padding-right: 0;
+  }
+  .block_popular_card {
+    width: 50%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .populard_card {
+    flex-direction: column;
+    margin:0;
+  }
+  aside img :nth-child(0n+2) {
+    width: 50%;
+  }
+  section article h2 {
+    padding: 20px 0;
+  }
+  .block_cards_marseille_1 {
+    height:199px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom:20px;
+  }
+  .block_cards_marseille2 {
+    display:flex;
+    flex-direction: row;
+  }
+  .block_card_marseille_element {
+    width: 100%;
+    padding-right: 2.75%;
+  }
+
 }
