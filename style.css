@@ -719,7 +719,6 @@ footer p {
     background-color: #DEEBFF;
   }
   footer {
-    display: flex;
     flex-direction: row;
     padding: 50px;
     margin: 0;
@@ -732,12 +731,10 @@ footer p {
   }
   footer h2 {
     font-size: 1em;
-    font-weight: bold;
     margin: 0;
     padding: 10px;
   }
   footer p {
-    font-size: 1em;
     padding: 10px;
     margin: 0;
   }
@@ -849,5 +846,24 @@ footer p {
    width: 30.87%;
    margin-right:3.5%;
  }
-
+ footer {
+  flex-direction: row;
+  padding: 50px;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+.element {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+footer h2 {
+  font-size: 1em;
+  margin: 0;
+  padding: 10px;
+}
+footer p {
+  padding: 10px;
+  margin: 0;
+}
 }
